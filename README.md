@@ -23,35 +23,23 @@ Program to implement univariate Linear Regression to fit a straight line using l
 Developed by:Poornima J
 RegisterNumber:212225040303
 
-#include <stdio.h>
-
-int main()
-{
-    char str[100];
-    int i = 0;
-
-    printf("Enter a string:\n");
-    fgets(str, sizeof(str), stdin);
-
-    printf("Words after split by space are:\n");
-
-    while(str[i] != '\0')
-    {
-        if(str[i] == ' ')
-        {
-            printf("\n");
-        }
-        else if(str[i] != '\n')
-        {
-            printf("%c", str[i]);
-        }
-
-        i++;
-    }
-
-    return 0;
-}
-*/
+import numpy as np
+import matplotlib.pyplot as plt
+x = np.array([1, 2, 3, 4, 5])     
+y = np.array([2, 4, 5, 4, 5])     
+n = len(x)
+m = (n * np.sum(x * y) - np.sum(x) * np.sum(y)) / (n * np.sum(x ** 2) - (np.sum(x)) ** 2)
+c = (np.sum(y) - m * np.sum(x)) / n
+print(f"Slope (m): {m}")
+print(f"Intercept (c): {c}")
+y_pred = m * x + c
+plt.scatter(x, y, color='blue', label='Actual data')
+plt.plot(x, y_pred, color='red', label='Fitted line')
+plt.xlabel('X')
+plt.ylabel('Y')
+plt.title('Univariate Linear Regression using Least Squares')
+plt.legend()
+plt.show()
 ```
 
 ## Output:
