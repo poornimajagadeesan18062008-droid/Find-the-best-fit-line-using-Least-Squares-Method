@@ -55,7 +55,8 @@ int main()
 ```
 
 ## Output:
-![best fit line](sam.png)
+<img width="783" height="645" alt="583730476-3b747a1a-1230-49a5-b46e-975e6b2581c9" src="https://github.com/user-attachments/assets/0517a857-2c3a-4a48-a03e-f28e11d8f8f6" />
+
 
 
 ## Result:
