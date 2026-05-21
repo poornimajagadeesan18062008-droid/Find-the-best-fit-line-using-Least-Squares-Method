@@ -20,8 +20,37 @@ To implement univariate Linear Regression to fit a straight line using least squ
 ```
 /*
 Program to implement univariate Linear Regression to fit a straight line using least squares.
-Developed by: 
-RegisterNumber:  
+Developed by:Poornima J
+RegisterNumber:212225040303
+
+#include <stdio.h>
+
+int main()
+{
+    char str[100];
+    int i = 0;
+
+    printf("Enter a string:\n");
+    fgets(str, sizeof(str), stdin);
+
+    printf("Words after split by space are:\n");
+
+    while(str[i] != '\0')
+    {
+        if(str[i] == ' ')
+        {
+            printf("\n");
+        }
+        else if(str[i] != '\n')
+        {
+            printf("%c", str[i]);
+        }
+
+        i++;
+    }
+
+    return 0;
+}
 */
 ```
 
